@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pedido</title>
+    <style>
+
+        p{
+            text-align: left;
+            font:italic;
+        }
+        .centro{
+            text-align: center;
+        }
+
+        .izquierda{
+            text-align: left;
+        }
+
+        .derecha{
+            text-align: right;
+        }
+
+        h1{
+            font-weight: bold;
+            text-align: center;
+            color: brown;
+        }
+    </style>
+</head>
+<body style="background-color: burlywood;"> 
+    <h1>Aquí se hace el pedido</h1>
+    <hr><br>
+
+    <h2 class="centro">Datos del cliente</h2><br>
+
+    <form action="pedido.js">
+        <label for="Nombre">Nombre del cliente: </label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br><br>
+    
+        <label for="tel1">Teléfono de contacto</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="Número de telefono"><br><br>
+
+        <label for="Correo1">Correo de contacto</label><br>
+        <input type="email" id="Correo1" name="Correo1" placeholder="e-mail"><br><br>
+    <hr>
+
+    <h2 class="centro">Datos del pedido</h2><br>
+
+        <h2>Sabor del pastel</h2>
+        <input type="radio" id="chocolate" name="flavor" value="Chocolate">
+        <label for="html">Chocolate</label><br>
+        <input type="radio" id="fresa" name="flavor" value="Fresa">
+        <label for="css">Fresa</label><br>
+        <input type="radio" id="vainilla" name="flavor" value="Vainilla">
+        <label for="html">Vainilla</label><br>
+        <input type="radio" id="napolitano" name="flavor" value="Napolitano">
+        <label for="html">Napolitano</label><br>
+        <input type="radio" id="3leches" name="flavor" value="3Leches">
+        <label for="css">3 Leches</label><br>
+        <input type="radio" id="combinados" name="flavor" value="Combinados">
+        <label for="html">Combinados</label>
+        <input type="text" id="cuales" name="cuales" placeholder="¿Que sabores?"><br><br>
+        
+        <h2>Adornos</h2>
+        <input type="checkbox" id="topping1" name="topping1" value="cobertura">
+        <label for="topping1">Cobertura de Fondant</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="fruta">
+        <label for="topping2">Fruta fresca</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="chispaschoco">
+        <label for="topping3">Chispas de chocolate</label><br>
+        <input type="checkbox" id="topping2" name="topping4" value="granillochoco">
+        <label for="topping2">Granillo de chocolate</label><br>
+        <input type="checkbox" id="topping3" name="topping5" value="granillocolores">
+        <label for="topping3">Granillo de colores</label><br><br>
+
+        <h2>Extras</h2>
+        <input type="checkbox" id="topping1" name="topping6" value="vela">
+        <label for="topping1">Vela</label><br>
+        <input type="checkbox" id="topping2" name="topping7" value="bomba">
+        <label for="topping2">Bomba de confeti</label><br>
+        <input type="checkbox" id="topping3" name="topping8" value="luz">
+        <label for="topping2">Luz de bengala</label><br>
+
+        <br><br>
+        <input type="reset">
+        <input type="submit" >
+        <br><br>
+    </form>
+</body>
+</html>
